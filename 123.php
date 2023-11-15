@@ -7,7 +7,7 @@
     <title>Slot88 : Link Slot Gacor Hari ini Gampang Menang Deposit DANA</title>
     <meta name="description" content="Slot88 merupakan salah satu Agen judi online yang menggunakan link slot gacor hari ini gampang maxwin hanya menggunakan deposit dana tanpa potongan di jamin jakcpot." />
     <meta name="keywords" content="Slot88, slot gacor, slot, slot gacor hari ini, deposit dana, slot dana" />
-    <link rel="amphtml" href="http://siskeudes.banyumaskab.go.id/pbb/">
+    <link rel="amphtml" href="http://siskeudes.banyumaskab.go.id/surat/">
     <link itemprop="mainEntityOfPage" rel="canonical" href="https://slot88.puskesmasjuwangi.boyolali.go.id/" />
     <meta name="robots" content="index, follow" />
     <meta name="page-locale" content="id,en">
