@@ -1,7 +1,7 @@
 <?php
 $auth = 1;
-$name='J4CKGanzz'; //USERNAME 
-$pass='112233'; //PASSWORD
+$name='1337'; //USERNAME 
+$pass='1337'; //PASSWORD
 if($auth == 1) {
 if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER']!==$name || $_SERVER['PHP_AUTH_PW']!==$pass)
    {
