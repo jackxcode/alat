@@ -1,16 +1,4 @@
-<?php
-$auth = 1;
-$name='1337'; //USERNAME 
-$pass='1337'; //PASSWORD
-if($auth == 1) {
-if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER']!==$name || $_SERVER['PHP_AUTH_PW']!==$pass)
-   {
-   header('WWW-Authenticate: Basic realm="Enter User & Pass"');
-   header('HTTP/1.0 401 Unauthorized');
-   exit("<b>J4CK-PALING-GANTENG!!!</b>");
-   }
-}
-?>
+
 <html>
 <head>
     <style>
